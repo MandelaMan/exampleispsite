@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ISP Pay MPESA Button</title>
+    <title>Captive Portal</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@400;600&display=swap");
 
@@ -78,8 +78,14 @@
         font-size: 1.8em;
       }
 
+      .exprd {
+        color: red;
+        font: bold;
+      }
+
       .m_txt {
         font-size: 1em;
+        color: white;
       }
 
       .s_txt {
@@ -151,10 +157,12 @@
         </nav>
         <div class="balance-section">
           <div class="intro-text">
+            <input type="hidden" name="mac_address" value="00-B0-D0-63-C2-26" />
+            <input type="hidden" name="bundle_id" value="BDF78655" />
             <span class="m_txt">My balance</span>
             <span class="b_txt">Monthly @10Mbps</span>
-            <span class="s_txt">Expires in 16 days</span>
-            <span class="m_txt"><a href="">My unused bundles</a></span>
+            <span class="s_txt exprd">Expired</span>
+            <span class="m_txt"><a href="">My unused bundles : 0 MBs</a></span>
             <button>Connect</button>
           </div>
           <ul>
